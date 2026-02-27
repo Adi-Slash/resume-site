@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DigitalTwinChat } from "@/components/digital-twin-chat";
 
 const impactMetrics = [
   { label: "Years in software delivery", value: "30+" },
@@ -91,6 +92,7 @@ export default function Home() {
           <a href="#about">About</a>
           <a href="#journey">Journey</a>
           <a href="#portfolio">Portfolio</a>
+          <a href="#chat">AI Twin</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -207,6 +209,19 @@ export default function Home() {
             </article>
           ))}
         </div>
+      </section>
+
+      <section id="chat" className="panel">
+        <div className="section-header">
+          <p className="eyebrow">Digital Twin</p>
+          <h2>Ask AdrianAI about career, architecture, and delivery experience.</h2>
+        </div>
+        <p className="hero-copy">
+          This assistant is tuned from Adrian&apos;s profile and career highlights. Ask about major
+          achievements, leadership approach, cloud modernization work, or architectural decision
+          style.
+        </p>
+        <DigitalTwinChat />
       </section>
 
       <footer id="contact" className="site-footer">
